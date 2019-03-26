@@ -13,3 +13,11 @@ with open("2Simoutput.csv") as f:
     print(json.dumps(dict(row)))
     outputfile.write(json.dumps(dict(row)))
   outputfile.close()
+
+issue = datetime.datetime.strptime(msg['nwws']['issue'], "%Y-%m-%dT%H:%M:%SZ")
+ _id: UTIME
+  convert date to UTIME
+
+  https://docs.python.org/3.5/library/datetime.html
+
+  https://stackoverflow.com/questions/9637838/convert-string-date-to-timestamp-in-python#9637908
